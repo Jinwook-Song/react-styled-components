@@ -8,6 +8,7 @@ import Attrs from './features/attrs';
 const Container = styled.div`
   display: grid;
   grid-gap: 20px;
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 function App() {
