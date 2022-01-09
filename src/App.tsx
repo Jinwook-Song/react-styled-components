@@ -1,7 +1,8 @@
+import styled from 'styled-components';
+
 import AdaptExtend from './features/adapt-extend';
 import As from './features/as';
-
-import styled from 'styled-components';
+import Attrs from './features/attrs';
 
 const Container = styled.div`
   display: grid;
@@ -13,6 +14,7 @@ function App() {
     <Container>
       <AdaptExtend />
       <As />
+      <Attrs />
     </Container>
   );
 }
