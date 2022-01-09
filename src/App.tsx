@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import AdaptExtend from './features/adapt-extend';
+import Animations from './features/animations';
 import As from './features/as';
 import Attrs from './features/attrs';
 
@@ -15,6 +16,7 @@ function App() {
       <AdaptExtend />
       <As />
       <Attrs />
+      <Animations />
     </Container>
   );
 }
