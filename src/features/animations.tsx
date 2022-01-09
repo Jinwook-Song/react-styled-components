@@ -17,16 +17,30 @@ const roateAnimation = keyframes`
 `;
 
 const Box = styled.button`
-  width: 200px;
   height: 200px;
+  width: 200px;
   background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: ${roateAnimation} 1s linear infinite;
+  span {
+    font-size: 36px;
+    &:hover {
+      font-size: 48px;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
 `;
 
 function Animations() {
   return (
     <Container>
-      <Box />
+      <Box>
+        <span>⭐</span>
+      </Box>
     </Container>
   );
 }
