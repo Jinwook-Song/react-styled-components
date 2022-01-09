@@ -16,6 +16,10 @@ const roateAnimation = keyframes`
     }
 `;
 
+const Emoji = styled.span`
+  font-size: 36px;
+`;
+
 const Box = styled.button`
   height: 200px;
   width: 200px;
@@ -24,8 +28,8 @@ const Box = styled.button`
   justify-content: center;
   align-items: center;
   animation: ${roateAnimation} 1s linear infinite;
-  span {
-    font-size: 36px;
+  // pseudo selector
+  ${Emoji} {
     &:hover {
       font-size: 48px;
     }
@@ -39,7 +43,7 @@ function Animations() {
   return (
     <Container>
       <Box>
-        <span>⭐</span>
+        <Emoji as='p'>⭐</Emoji>
       </Box>
     </Container>
   );
